@@ -25,3 +25,4 @@ To Do:
 - Enable Renaming
 - Enable adding icons
 - Improve visuals
+- Add multifunctional usage on multiple devices
