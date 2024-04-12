@@ -4,6 +4,7 @@ This is my journey of creating a functional Notepad!
 Here is my current to do list:
 
 Next Project:
+- Enable deleting
 
 In Progress:
 - Enable writing
@@ -15,7 +16,6 @@ Done:
 
 To Do:
 
-- Enable deleting
 - Enable Saving File
 - Enable Editing/Reopening File
 - Add Tabs
