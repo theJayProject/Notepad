@@ -4,17 +4,16 @@ This is my journey of creating a functional Notepad!
 Here is my current to do list:
 
 Next Project:
-- Create a close button
+- Create a size button
 
 In Progress:
-- Create a box
-
+- Create a close button
+- 
 Done:
-
+- Create a box
 
 To Do:
 
-- Create a size button
 - Enable writing
 - Enable deleting
 - Enable Saving File
