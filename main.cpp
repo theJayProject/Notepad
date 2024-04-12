@@ -1,9 +1,12 @@
-﻿#include <iostream>
-#include "SDL.h"
+﻿#include "SDL.h"
+#include <iostream>
 #include <SDL_ttf.h>
-#define MY_FONT "/usr/share/fonts/truetype/freefont/FreeSans.ttf"
+#define MY_FONT "/usr/include/SDL/SDL.h"
+
+
 int main(int argc, char** argv) {
 	//Error handling
+	std::cout << "Something";
 	if (SDL_Init(SDL_INIT_VIDEO) < 0) {
 	std::cout << "Failed to initialise SDL Library\n";
 	return -1;
@@ -20,27 +23,25 @@ int main(int argc, char** argv) {
 		std::cout << "Failed to create window\n";
 		return -1;
 	}
-	
 
 //Adding Ability to add Text
 	std::string text;
-	SDL_StartTextInput();
+		SDL_StartTextInput();
 	//ADDING YOUR OWN FONT AND IT NOT LOADING
 	TTF_Font* font = TTF_OpenFont(MY_FONT, 64);
 	//	Error handling
 	if (!font) {
 		printf("Failed to load font: %s\n", TTF_GetError());
-		//		return -1;
+	//	return -1;
 	}
-	if (TTF_Init() < 0) {
+	/*if (TTF_Init() < 0) {
 		printf("SDL_ttf could not initialize! TTF_Error: %s\n", TTF_GetError());
 		return -1;
-	}  
+	}
 	// Create surface with rendered text
-	TTF_Font* font;
 	SDL_Color textColor = { 0, 0, 0, 255 }; // black color
 	SDL_Surface* textSurface = TTF_RenderText_Solid(font, "Hello World!", textColor);
-
+	
 	if (!textSurface) {
 		printf("Failed to create text surface: %s\n", TTF_GetError());
 		return -1;
@@ -52,7 +53,7 @@ int main(int argc, char** argv) {
 		printf("Failed to create text texture: %s\n", SDL_GetError());
 		return -1;
 	}
-
+	*/
 
 
 //Event Updates
